@@ -1,0 +1,22 @@
+<!doctype html>
+
+<head>
+  <meta name="title" content="Kustom Designer Shop">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head
+
+<body>
+    
+<div id="app">
+    <div class="nav-bar"><a href="#" id="cart" class="cart">Cart({{ cart.length }})</a></div>
+
+    <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeItem"></product>
+</div>
+
+<!--Scripts-->
+<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
